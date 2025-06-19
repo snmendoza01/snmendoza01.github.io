@@ -30,6 +30,9 @@
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -47,6 +50,8 @@
       
     
     
+      <link rel="stylesheet" href="../../css/overrides.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -57,7 +62,12 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -66,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#example-project-understanding-user-engagement" class="md-skip">
+        <a href="#the-impact-of-message-framing-in-physical-activity-bachelors-thesis" class="md-skip">
           Skip to content
         </a>
       
@@ -109,8 +119,8 @@
       </div>
     </div>
     
+      
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -328,9 +338,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#analysis-code" class="md-nav__link">
+  <a href="#analysis-and-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Analysis &amp; Code
+      Analysis and Code
     </span>
   </a>
   
@@ -468,9 +478,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#analysis-code" class="md-nav__link">
+  <a href="#analysis-and-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Analysis &amp; Code
+      Analysis and Code
     </span>
   </a>
   
@@ -519,28 +529,42 @@
 
 
 
-<h1 id="example-project-understanding-user-engagement">Example Project: Understanding User Engagement</h1>
+<h1 id="the-impact-of-message-framing-in-physical-activity-bachelors-thesis">The Impact of Message Framing in Physical Activity (Bachelor's Thesis)</h1>
 <h2 id="overview">Overview</h2>
-<p>Brief description of the project, goals, and context. Explain the problem or question addressed.</p>
+<p>In this project, I aimed to understand the impact of message framing on physical activity levels. To do this, I sent 2 different types of emails: positive, negative, (and also included a control group with no emails), and measured the difference in activity levels over a span of a month. In the end, no significant results were found, although I believe this reflects on the nature of the intervention rather than the overall effectivity of message framing.</p>
 <h2 id="methods">Methods</h2>
 <ul>
 <li>Describe the research design (e.g., survey, experiment, field study).</li>
 <li>Tools used (e.g., Python for data analysis, R, Qualtrics for surveys).</li>
 <li>Data collection and sample details (ensuring privacy/anonymization).</li>
 </ul>
-<h2 id="analysis-code">Analysis &amp; Code</h2>
-<p>A summary of key analysis steps. You can link to a GitHub repository for full code:
-<a href="https://github.com/USERNAME/example-project">View the code on GitHub</a>
-The code we use is </p>
-<pre><code>import numpy as np
+<h2 id="analysis-and-code">Analysis and Code</h2>
+<p>In essence the idea behind the model is as follows. We used a moderation model, where the type of message (positive, negative, or control) was the independent variable, self-efficacy and attitudes towards physical activity were moderators, and the difference in physical activity over a period of a month was the dependent variable. In a flow chart, we can visualize this as</p>
+<pre class="mermaid"><code>graph LR
+  D{Self-Efficay} --&gt;|β| B;
+  A --&gt; X((( )));
+  D --&gt; X;
+  X --&gt; |δ| B
+  A[Message Framing] --&gt; |α| B[Change in Physical Activity];
+  A --&gt; Y((( )));
+  E --&gt; Y;
+  Y --&gt; |ε| B;
+  E{Attitudes} --&gt; |γ| B;</code></pre>
+<p>Here you can find my complete thesis.
+ 
+<iframe src="../../assets/Bachelor_Thesis.pdf" width="90%" height="500px" style="border: none;"></iframe>
+</p>
+<p>The code I used is 
+<div class="highlight"><pre><span></span><code>import numpy as np
 print(Hello world)
-</code></pre>
+</code></pre></div></p>
+<p><code>def func(hello: int) -&gt; float</code></p>
 <p>Optionally embed static images of key plots/results below:
 <img alt="Key Result" src="../../images/example-image.jpg" /></p>
 <h2 id="results">Results</h2>
 <p>Summarize findings and their implications. Explain how results informed decisions or further research.</p>
 <h2 id="impact">Impact</h2>
-<p>Describe the real-world or business impact: e.g., improved user engagement by X%, influenced product changes, etc.</p>
+<p>My results highlight that using emails as an intervention system was not an effective technique. Indeed, the participants which received negative and positive framing exhibited no statistically significant difference in activity levels from the control group. This should be considered in further interventions, and perhaps other methodologies (like mobile applications) should be adopted. In particular, it is a step forward in understanding what type of behavioural interventions should be used to make an impact in the activity levels of students.</p>
 <h2 id="next-steps-reflections">Next Steps &amp; Reflections</h2>
 <p>What could be improved, follow-up studies, lessons learned.</p>
 
@@ -621,6 +645,12 @@ print(Hello world)
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../js/mermaid-init.js"></script>
       
     
   </body>
