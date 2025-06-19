@@ -1,0 +1,17 @@
+site_name: "Sofia Held's Portfolio"
+site_author: "Sofia Held"
+site_description: "Portfolio showcasing behavioural science projects and research illustrative of my work."
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Projects:
+      - Example Project: projects/example-project.md
+  - About: about.md
+  - Contact: contact.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/USERNAME
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/USERNAME
