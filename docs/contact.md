@@ -1,7 +1,5 @@
 # Contact
 
-Feel free to reach out via email: your.email@example.com
+Feel free to reach out via email: sofia.ruiz.24@ucl.ac.uk
 
-Or connect on [LinkedIn](https://www.linkedin.com/in/USERNAME).
-
-You can also use a form service (e.g., Formspree) and embed code here if desired.
+Or connect on [LinkedIn](https://www.linkedin.com/in/sofiaheldr/).

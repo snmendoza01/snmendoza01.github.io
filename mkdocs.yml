@@ -3,6 +3,10 @@ site_author: "Sofia Held"
 site_description: "Portfolio showcasing behavioural science projects and research illustrative of my work."
 theme:
   name: material
+  palette:
+    scheme: default
+  highlightjs: true
+  highlight_theme: monokai  # try 'monokai', 'solarized-light', 'default', etc.
 nav:
   - Home: index.md
   - Projects:
@@ -15,3 +19,22 @@ extra:
       link: https://github.com/USERNAME
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/USERNAME
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+  - js/mermaid-init.js
+
+extra_css:
+- css/overrides.css
