@@ -6,19 +6,19 @@ theme:
   palette:
     scheme: default
   highlightjs: true
-  highlight_theme: monokai  # try 'monokai', 'solarized-light', 'default', etc.
+  highlight_theme: 'ayu'  # try 'monokai', 'solarized-light', 'default', etc.
 nav:
   - Home: index.md
   - Projects:
-      - Example Project: projects/example-project.md
+      - Message Framing for Physical Activity: projects/bachelor-thesis.md
   - About: about.md
   - Contact: contact.md
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/USERNAME
+      link: https://github.com/sofiaheld24
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/USERNAME
+      link: https://www.linkedin.com/in/sofiaheldr/
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
@@ -36,5 +36,5 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
   - js/mermaid-init.js
 
-extra_css:
-- css/overrides.css
+# extra_css:
+# - css/overrides.css
