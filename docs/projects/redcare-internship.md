@@ -1,7 +1,7 @@
-# A Behavioural Analysis for Increasing Vegetable Consumption of Children in the UK (Master's Thesis)
+# Increasing Employee Engagement with E-learning Plattforms (Redcare Pharmacy Internship)
 
 ## Overview
-This qualitative study explores how distributed teams coordinate and maintain engagement when working remotely. Conducted for a consulting engagement with Company X in Spring 2024.
+This qualitative study explored how distributed teams coordinate and maintain engagement when working remotely. Conducted for a consulting engagement with Company X in Spring 2024.
 
 ## Background & Objectives
 - **Context**: Rising trend of hybrid work prompted Company X to understand challenges in remote collaboration.
