@@ -52,6 +52,10 @@
     
       <link rel="stylesheet" href="../../css/cards.css">
     
+      <link rel="stylesheet" href="../../css/timeline.css">
+    
+      <link rel="stylesheet" href="../../css/overrides.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -379,6 +383,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#veg-power-project-visuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Veg Power Project Visuals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#recommendations-impact" class="md-nav__link">
     <span class="md-ellipsis">
       Recommendations &amp; Impact
@@ -542,6 +555,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#veg-power-project-visuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Veg Power Project Visuals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#recommendations-impact" class="md-nav__link">
     <span class="md-ellipsis">
       Recommendations &amp; Impact
@@ -594,10 +616,18 @@
 <ol>
 <li><strong>Over-communication Fatigue</strong>: Many participants felt overwhelmed by constant messaging.</li>
 <li><strong>Lack of Rituals</strong>: Absence of informal “watercooler” interactions decreased sense of team cohesion.</li>
-<li><strong>Boundary Blur</strong>: Difficulty separating work/home due to flexible schedules, affecting attention.</li>
 </ol>
-<p><em>(Embed or link to a summary infographic if available)</em>  </p>
-<!-- ![Summary Infographic](../images/remote-collab-infographic.png) -->
+<h2 id="veg-power-project-visuals">Veg Power Project Visuals</h2>
+<div id="vegp-carousel" class="vegp-carousel">
+  <button class="vegp-arrow vegp-arrow-left" aria-label="Previous image">&#9664;</button>
+
+  <div class="vegp-image-container">
+    <img data-src="../../assets/canva/vegpower-poster-1.svg" alt="Vegpower Poster 1" class="vegp-lazy vegp-active" loading="lazy" />
+    <img data-src="../../assets/canva/vegpower-poster-2.svg" alt="Vegpower Poster 2" class="vegp-lazy" loading="lazy" />
+  </div>
+
+  <button class="vegp-arrow vegp-arrow-right" aria-label="Next image">&#9654;</button>
+</div>
 
 <h2 id="recommendations-impact">Recommendations &amp; Impact</h2>
 <ul>
@@ -696,6 +726,8 @@
         <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
       
         <script src="../../js/mermaid-init.js"></script>
+      
+        <script src="../../js/arrows.js"></script>
       
     
   </body>
