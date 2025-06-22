@@ -16,10 +16,19 @@ This qualitative study explores how distributed teams coordinate and maintain en
 ## Key Findings
 1. **Over-communication Fatigue**: Many participants felt overwhelmed by constant messaging.
 2. **Lack of Rituals**: Absence of informal “watercooler” interactions decreased sense of team cohesion.
-3. **Boundary Blur**: Difficulty separating work/home due to flexible schedules, affecting attention.
 
-*(Embed or link to a summary infographic if available)*  
-<!-- ![Summary Infographic](../images/remote-collab-infographic.png) -->
+## Veg Power Project Visuals
+
+<div id="vegp-carousel" class="vegp-carousel">
+  <button class="vegp-arrow vegp-arrow-left" aria-label="Previous image">&#9664;</button>
+  
+  <div class="vegp-image-container">
+    <img data-src="../../assets/canva/vegpower-poster-1.svg" alt="Vegpower Poster 1" class="vegp-lazy vegp-active" loading="lazy" />
+    <img data-src="../../assets/canva/vegpower-poster-2.svg" alt="Vegpower Poster 2" class="vegp-lazy" loading="lazy" />
+  </div>
+  
+  <button class="vegp-arrow vegp-arrow-right" aria-label="Next image">&#9654;</button>
+</div>
 
 ## Recommendations & Impact
 - **Structured Communication Windows**: Suggest “focus hours” with minimal notifications; pilot with Team A resulted in a 15% self-reported increase in concentration.  
