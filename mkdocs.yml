@@ -31,7 +31,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-site_url: "https://sofiaheldruiz.de"
+# site_url: "https://sofiaheldruiz.de"
 
 plugins:
   - search
