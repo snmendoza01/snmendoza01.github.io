@@ -13,9 +13,14 @@
       <p>Currently completing a master's degree focusing on psychological and environmental determinants of behaviour, including an applied project on increasing vegetable consumption with Veg Power NGO.</p>
       <p><strong>Selected Courses:</strong></p>
       <div class="course-tags">
-        <span>Behaviour Change Interventions</span>
-        <span>Quantitative Research</span>
-        <span>Statistics for Health Research</span>
+        <span>Behavioural Economics and Game Theory</span>
+        <span>Human-Computer Interaction</span>
+        <span>Intervention Development and Evaluation</span>
+        <span>Health and Wellbeing</span>
+        <span>Health and Wellbeing</span>
+        <span>Theories and Models of Behaviour Change</span>
+        <span>Research Methods and Evidence for Global Health</span>
+        <span>Wellbeing in Buildings</span>
       </div>
     </div>
   </div>
@@ -43,9 +48,21 @@
       <p>Graduated with distinction. Focused on behavioural science, motivation, and cognitive psychology. Thesis investigated the impact of message framing on motivation for physical activity.</p>
       <p><strong>Selected Courses:</strong></p>
       <div class="course-tags">
+        <span>Social Cognition</span>
+        <span>Intro to Python</span>
+        <span>Data Collection and Empirical Research Methodologies</span>
+        <span>Applied Statistics with R</span>
+        <span>Communication and Interaction</span>
+        <span>Social Psychology</span>
+        <span>Cognitive Psychology</span>
         <span>Health Psychology</span>
-        <span>Data Analysis (R & Python)</span>
-        <span>Experimental Design</span>
+        <span>Intro to Accounting</span>
+        <span>Intro to Finance</span>
+        <span>Intro to International Business</span>
+        <span>Intro to Sociology</span>
+        <span>Neurobiology</span>
+        <span>Neuroscience Methods</span>
+        <span>Qualitative Research Methods</span>
       </div>
     </div>
   </div>
@@ -78,8 +95,8 @@
 </div>
 
 
-## **Interests**: 
+<!-- ## **Interests**: 
 - Decision-making
 - Human Computer Interaction
 - Behavioural interventions
-- Health Policy
+- Health Policy -->

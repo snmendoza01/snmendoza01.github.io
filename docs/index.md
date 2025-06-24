@@ -9,20 +9,26 @@ In this website you can find detailed write-ups of my research projects, code sa
 <div class="projects-grid">
 
   <a href="projects/bachelor-thesis" class="project-card" target="_self">
-    <h3>Quantitative Study: The Role of Message Framing in Physical Activity</h3>
-    <p>Short blurb summarizing the study, its goals, and key insights.</p>
+    <h3>Quantitative Study</h3>
+    <p>A moderation model analysis on "The Role of Message Framing in Physical Activity"</p>
     <p class="read-more">Read more ›</p>
   </a>
 
   <a href="projects/masters-thesis" class="project-card" target="_self">
-    <h3>Qualitative Study: A Behavioural Analysis of Barriers and Enablers for Vegetable Consumption during Family Mealtimes - An initiative with Veg Power NGO</h3>
-    <p>Short blurb summarizing the qualitative analysis and findings.</p>
+    <h3>Qualitative Study</h3>
+    <p>A Behavioural Analysis of Barriers and Enablers for Vegetable Consumption during Family Mealtimes - An initiative with Veg Power NGO</p>
     <p class="read-more">Read more ›</p>
   </a>
 
   <a href="projects/redcare-internship" class="project-card" target="_self">
-    <h3>Industry Experience: Increasing Employee Engagement with E-Learning Platforms - Internship at Redcare Pharmacy</h3>
-    <p>Brief description of the internship project and impact achieved.</p>
+    <h3>Industry Experience</h3>
+    <p>Increased employee engagement with e-learning platforms - Internship at Redcare Pharmacy.</p>
+    <p class="read-more">Read more ›</p>
+  </a>
+
+  <a href="projects/caracol-internship" class="project-card" target="_self">
+    <h3>Market Research Experience</h3>
+    <p>Created consumer profiles and presented to stakeholders - Internship at Caracol Radio</p>
     <p class="read-more">Read more ›</p>
   </a>
 
