@@ -1,58 +1,81 @@
+/* docs/css/space-timeline.css */
 
+/* 1) Main timeline “beam” */
 .timeline-v2 {
   position: relative;
   margin: 2rem 0;
   padding-left: 1rem;
-  border-left: 3px solid #3f51b5;
+  border-left: 3px solid rgba(100, 100, 255, 0.6);
 }
 
+/* 2) Each event block */
 .timeline-v2-item {
   position: relative;
   margin-bottom: 2.5rem;
   padding-left: 2rem;
 }
 
+/* 3) Neon‑orb dot */
 .timeline-v2-dot {
   position: absolute;
   left: -11px;
   top: 0.6rem;
-  width: 14px;
-  height: 14px;
-  background: #3f51b5;
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle at 30% 30%,
+                              #ffffff,
+                              #90caf9);
+  border: 2px solid rgba(144, 202, 249, 0.9);
   border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 0 0 2px #3f51b5;
+  box-shadow:
+    0 0 0.5rem rgba(144, 202, 249, 0.7),
+    0 0 1rem rgba(100, 100, 255, 0.5);
 }
 
+/* 4) Translucent dark panels for content */
 .timeline-v2-content {
-  background: #fff;
+  background: rgba(10, 10, 30, 0.85);
   padding: 1rem 1.2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  box-shadow: 0 0 1.5rem rgba(50, 50, 150, 0.3);
+  color: #e0e0ff;
+  position: relative;
+  overflow: hidden;
 }
 
+/* 5) Headers in Orbitron with glow */
 .timeline-v2-content h3 {
   margin-top: 0;
-  font-size: 1.15rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  color: #c5c5ff;
+  text-shadow: 0 0 0.3rem rgba(200, 200, 255, 0.7);
 }
 
+/* 6) Date range as glowing timestamp */
 .timeline-v2-content .timeline-date-range {
   float: right;
-  font-size: 0.9rem;
-  color: #666;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.85rem;
+  color: #90caf9;
+  text-shadow: 0 0 0.2rem rgba(144, 202, 249, 0.8);
 }
 
+/* 7) Course tags as little nebula badges */
 .course-tags {
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
 }
-
 .course-tags span {
   display: inline-block;
-  background: #e3e9ff;
-  color: #3f51b5;
+  background: radial-gradient(circle at center,
+                              rgba(144, 202, 249, 0.3),
+                              rgba(10, 10, 30, 0.9));
+  color: #e0e0ff;
   padding: 0.3rem 0.6rem;
   margin: 0.2rem;
   border-radius: 20px;
+  font-family: "Orbitron", sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
+  box-shadow: 0 0 0.6rem rgba(144, 202, 249, 0.5);
 }

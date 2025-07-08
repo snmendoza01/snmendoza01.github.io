@@ -1,0 +1,68 @@
+:root {
+  /* tweak these to customize your trail */
+  --cursor-color-1: #ffffff;
+  --cursor-color-2: #90caf9;
+  --cursor-size: 6px;
+  --cursor-life: 0.6s;
+  --sparkle-duration: 0.3s;
+}
+
+.cursor-star {
+  position: absolute;
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  pointer-events: none;
+  mix-blend-mode: screen;
+  animation: fade var(--cursor-life) forwards;
+}
+
+/* simple dot */
+.cursor-star.dot {
+  background: radial-gradient(circle, var(--cursor-color-1) 0%, var(--cursor-color-2) 70%);
+  border-radius: 50%;
+}
+
+/* little 4‑point star */
+.cursor-star.star {
+  background: transparent;
+  position: absolute;
+}
+.cursor-star.star::before,
+.cursor-star.star::after {
+  content: "";
+  position: absolute;
+  background: var(--cursor-color-1);
+}
+.cursor-star.star::before {
+  top: 50%; left: 0;
+  width: 100%; height: 2px;
+  transform: translateY(-50%);
+}
+.cursor-star.star::after {
+  top: 0; left: 50%;
+  width: 2px; height: 100%;
+  transform: translateX(-50%);
+}
+
+/* optional sparkle flicker */
+@keyframes sparkle {
+  0%,100% { opacity: 0; transform: scale(0.5); }
+  50%     { opacity: 1; transform: scale(1.5); }
+}
+
+/* make some of the dots sparkle */
+.cursor-star.dot:nth-child(4n) {
+  animation: sparkle var(--sparkle-duration) ease-out forwards, fade var(--cursor-life) var(--sparkle-duration) forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+/* disable on small screens */
+@media (max-width: 768px) {
+  .cursor-star { display: none !important; }
+}

@@ -101,3 +101,65 @@ pre:hover {
 .vegp-arrow-right {
   right: 0.2em;
 }
+
+/* 1) Two‑column flex container */
+.hero-two-col {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+/* 2) Photo wrapper with gentle gradient border + glow */
+.hero-photo-wrapper {
+  position: relative;
+  flex: 0 0 200px;               /* fixed width */
+  padding: 5px;                  /* border thickness */
+  border-radius: 14px;           /* smooth corners */
+  background: transparent;
+  /* gradient border */
+  border: 2px solid transparent;
+  border-image: linear-gradient(135deg, #8e44ad 0%, #3498db 100%) 1;
+  /* soft glow */
+  box-shadow: 0 4px 12px rgba(142, 68, 173, 0.3), 
+              0 6px 20px rgba(52, 152, 219, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 3) Hover lift + stronger glow */
+.hero-photo-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(142, 68, 173, 0.4),
+              0 8px 24px rgba(52, 152, 219, 0.3);
+}
+
+/* 4) The image itself */
+.hero-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;           /* inner radius matches wrapper */
+}
+
+/* 5) Summary text, lighter for dark bg */
+.hero-summary {
+  flex: 1 1 250px;
+}
+.hero-summary p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;                   /* lighter gray */
+  margin: 0;
+}
+
+/* 6) Responsive fallback */
+@media (max-width: 600px) {
+  .hero-two-col {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-photo-wrapper {
+    margin: 0 auto;
+  }
+}
