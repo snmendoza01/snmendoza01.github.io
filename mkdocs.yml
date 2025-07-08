@@ -1,10 +1,21 @@
-site_name: "Sofia Held's Portfolio"
-site_author: "Sofia Held"
+site_name: "Nicolas Mendoza's Portfolio"
+site_author: "Nicolas Mendoza"
 site_description: "Portfolio showcasing behavioural science projects and research illustrative of my work."
 theme:
   name: material
+
   palette:
-    scheme: default
+    scheme: slate     # dark base
+    primary: indigo
+    accent: deep-purple
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant          # client-side smooth scroll
+    # - toc.integrate              # integrate TOC into page
+    - content.code.annotate      # nice code blocks if needed
   highlightjs: true
   highlight_theme: 'ayu'  # try 'monokai', 'solarized-light', 'default', etc.
 nav:
@@ -41,8 +52,16 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
   - js/mermaid-init.js
   - js/arrows.js
+  - js/particles.min.js   # particles.js library
+  - js/stars.js           # your init code
+  - https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap
+  - https://unpkg.com/rellax@1.12.1/rellax.min.js
+  - js/space-cursor.js
+
 
 extra_css:
   - css/cards.css
   - css/timeline.css
   - css/overrides.css
+  - css/space.css
+  - css/space-cursor.css
